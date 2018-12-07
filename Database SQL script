@@ -1,0 +1,68 @@
+create table student (
+    studentID       VARCHAR(50),
+    studentPass     VARCHAR(50),
+    studentFname    VARCHAR(50),
+    studentLname    VARCHAR(50),
+    studentCourse   VARCHAR(50),
+    studentTel      VARCHAR(15),
+    studentEmail    VARCHAR(100),
+    studentAdd      VARCHAR(100),
+    studentPostcode VARCHAR(15),
+    primary key (studentID)
+);
+
+insert into student(studentID, studentPass) 
+values("admin", "admin");
+
+create table timeTable (
+  moduleNo      VARCHAR(50),
+  courseName    VARCHAR(50),
+  moduleName    VARCHAR(50),
+  roomNo        VARCHAR(50),
+  day           VARCHAR(50),
+  cTime         VARCHAR(50),
+  lecturer      VARCHAR(100),
+  primary key (moduleNo)
+);
+
+/*modules for computer science course starting with 10*/
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("1001", "Computer Science", "Java Programming", "BY.01.01", "Every Monday", "14:00-16:00", "John Smith");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("1002", "Computer Science", "Information Systems", "BY.01.02", "Every Wednesday", "10:00-12:00", "Lewis Sutton");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("1003", "Computer Science", "Data Communications", "BY.01.03", "Every Wednesday", "13:00-15:00", "Kian Shaw");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("1004", "Computer Science", "Web Development", "BY.01.04", "Every Second Friday", "14:00-15:00", "Orion Rose");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("1005", "Computer Science", "Functional Programming", "BY.01.05", "Every Second Friday", "15:00-16:00", "Keagan Harrison");
+
+/*modules for creative computing course starting with 20*/
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("2001", "Creative Computing", "Game Design", "BY.02.11", "Every Tuesday", "10:00-12:00", "Ryan Dean");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("2002", "Creative Computing", "Web Design", "BY.02.12", "Every Tuesday", "13:00-15:00", "Freddie Hart");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("2003", "Creative Computing", "Game Development", "BY.02.13", "Every Wednesday", "11:00-13:00", "Thaddeus Lynn");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("2004", "Creative Computing", "User Experience", "BY.02.14", "Every Second Monday", "12:00-13:00", "Ashton Hale");
+
+/*modules for cyber security course starting with 30*/
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("3001", "Cyber Security", "Cryptography", "BY.03.01", "Every Thursday", "11:00-13:00", "Blake Williamson");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("3002", "Cyber Security", "Distributed Computing", "BY.03.02", "Every Thursday", "13:00-15:00", "Tom Davidson");
+
+insert into timeTable (moduleNo, courseName, moduleName, roomNo, day, cTime, lecturer)
+  values("3003", "Cyber Security", "Python Programming", "BY.03.03", "Every Friday", "12:00-14:00", "Damon Landry");
