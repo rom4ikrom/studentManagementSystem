@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#rootMouseClick" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myApp.ui.LoginStageController">
+   <children>
+      <Button fx:id="btnRegister" layoutX="200.0" layoutY="497.0" mnemonicParsing="false" onAction="#createAcc" onMouseEntered="#btnRegisterMouseEnter" onMouseExited="#btnRegisterMouseExit" prefHeight="27.0" prefWidth="155.0" style="-fx-background-color: none;" text="Register" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnLogin" depthTest="DISABLE" layoutX="200.0" layoutY="446.0" mnemonicParsing="false" onAction="#accessAcc" onMouseEntered="#btnLoginMouseEnter" onMouseExited="#btnLoginMouseExit" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: none; -fx-border-color: green; -fx-border-radius: 20px; -fx-border-width: 3px;" text="Log In" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></Button>
+      <TextField fx:id="txtLogin" layoutX="270.0" layoutY="295.0" onMouseClicked="#rootMouseClick" prefHeight="27.0" prefWidth="155.0" promptText="Login" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></TextField>
+      <PasswordField fx:id="txtPass" layoutX="281.0" layoutY="344.0" onMouseClicked="#rootMouseClick" prefHeight="27.0" prefWidth="0.0" promptText="Password" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></PasswordField>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="202.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <image>
+            <Image url="@../../resources/uwlLogo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblError" alignment="CENTER" layoutX="200.0" layoutY="401.0" prefHeight="17.0" prefWidth="200.0" textFill="#e40404" wrapText="true">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
